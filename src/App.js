@@ -1,47 +1,61 @@
-//import logo from './logo.svg';
-// import './App.css';
+// import React from "react";
 
 // function App() {
-  // return (
-  //   <div className="App">
-  //     <header className="App-header">
-  //       <img src={logo} className="App-logo" alt="logo" />
-  //       <p>
-  //         Edit <code>src/App.js</code> and save to reload.
-  //       </p>
-  //       <a
-  //         className="App-link"
-  //         href="https://reactjs.org"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //       >
-  //         Learn React
-  //       </a>
-  //     </header>
-  //   </div>
-  // );
-//   let username="sathvika";
-//   return(
-//     <div>
-//       <h1>{username}</h1>
-//     </div>
-//   )
+//   // let ele  = React.createElement("div" , {className:"App"} , 
+//   //   React.createElement("h1" ,null, "Header")
+//   // )
+//   let username = "Maheshwari";
+//   return (
+//     // <div className="App">
+//     //  <h1>Header</h1>
+//     //  <input />
+//     // </div>
+//     // ele
+//   //  <section>
+//   //    <h1>One JSx element</h1>
+//   //   <p>lorm3
+//   //   </p>
+//   //  </section>
+// <div>
+// <h1>{username}</h1>
+//   <p>{100+100}</p>
+// </div>
+//   );
 // }
-
 // export default App;
-//!CBC
+
+// ! components
+
+// !CBC
 // import React from "react";
 // class App extends React.Component{
 //   render(){
 //     return(
-//       <h1> Class based component</h1>
+//       <h1>Class based component</h1>
 //     )
 //   }
 // }
 // export default App;
-//! component composition
-//!rcc
-//!rafce
+
+// ! FBC
+
+// function App(){
+//   return(
+//     <h1>Function based component</h1>
+//   )
+// }
+// export default App;
+
+//! OR
+
+// const App=()=>{
+//   return(
+//     <h1>Arrow function component</h1>
+//   )
+// }
+// export default App;
+
+// ! component composition
 // import React from 'react'
 // import Navbar from './components/Navbar'
 // import Main from './components/Main'
@@ -54,9 +68,8 @@
 //       <Navbar/>
 //       <Main/>
 //       <div className='sidebar'>
-//         <Sidebar1/>
-//         <Sidebar2/>
-
+//       <Sidebar1/>
+//       <Sidebar2/>
 //       </div>
 //       <Footer/>
 //     </div>
@@ -64,44 +77,67 @@
 // }
 
 // export default App
-//!props
-// import React, {Component} from 'react'
+
+// !props
+// import React, { Component } from 'react'
 // import CBCPropEx from './propsex/CBCPropEx'
 // import FBCPropEx from './propsex/FBCPropEx'
 
-// export default class App extends Component{
-//   render(){
-//     return(
-//     <div>
-      // {/* <CBCPropEx
-      // username="sathvika"
-      // age={21}
-      // hobbies={["playing","dancing"]}
-      // address={{city:"warangal",area:"mangapet"}}
-      // sendFun={function(){alert("hi i am sathvika")}}
-      // /> */}
-      // {/* <FBCPropEx
-      // username="ravi"
-      // isMarried={true}
-      // hobbies={["chatting","reading","Eating","Sleeping"]}
-      // />
-//     </div>
+// export default class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         {/* <CBCPropEx 
+//         username="Vamshi"
+//         age={20}
+//         hobbies={["Playing" , "reading books" , "stock"]}
+//         address={{city:"sircilla", area:"Gandinagar"}}
+//         sendFun={function(){alert("hi i am vamshi")}}
+//         /> */}
+
+//         <FBCPropEx 
+//         username="Abhinay"
+//         isMarried={true}
+//         hobbies={["Chatting" , "Reading" , "Eating" , "Sleeping"]}
+//         />
+//       </div>
 //     )
 //   }
-// } */}
- //!props children
- import React from 'react'
- import PropChildEx from './propsex/PropChildEx'
- import SubChildEx from './propsex/SubChildEx'
- 
- const App = () => {
-   return (
-     <div>
-      <PropChildEx num={1000}>
-        <h1>this is data coming from parent children</h1>
-      </PropChildEx>
-     </div>
-   )
- }
- 
- export default App
+// }
+
+
+// !props children
+// import React from 'react'
+// import PropChildEx from './propsex/PropChildEx'
+// import SubChild from './propsex/SubChild'
+// import Child1 from './propsex/Child1'
+
+// const App = () => {
+//   return (
+//     <div>
+//     app
+//       {/* <PropChildEx num={1000}>
+//         <h1>this is data coming from props children</h1>
+//         <SubChild/>
+//       </PropChildEx> */}
+//       <Child1 university="Mallareddy university"/>
+//     </div>
+//   )
+// }
+
+// export default App
+import React from 'react'
+//import CBCStateEx from './stateexample/CBCStateEx'
+import FBCStateEx from './stateexample/FBCStateEx'
+
+const App = () => {
+  return (
+    <div>
+      {/* <CBCStateEx/> */}
+      <FBCStateEx/>
+
+    </div>
+  )
+}
+
+export default App
