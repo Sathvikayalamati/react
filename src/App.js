@@ -126,18 +126,42 @@
 // }
 
 // export default App
+// import React from 'react'
+// //import CBCStateEx from './stateexample/CBCStateEx'
+// import FBCStateEx from './stateexample/FBCStateEx'
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <CBCStateEx/> */}
+//       <FBCStateEx/>
+
+//     </div>
+//   )
+// }
+
+// export default App
 import React from 'react'
-//import CBCStateEx from './stateexample/CBCStateEx'
-import FBCStateEx from './stateexample/FBCStateEx'
+//import FunctionalComponent from './components/FunctionalComponent';
+import styles from './myStyle.module.css'
+import './components/Styles.css'
 
-const App = () => {
+function App() {
   return (
-    <div>
-      {/* <CBCStateEx/> */}
-      <FBCStateEx/>
-
+    <div className="App">
+      <h1 class='heading'>This is on styling class</h1>
+      <h2 class={styles.error}>Error!! 404</h2>
+     
+      {/* <FunctionalComponent clgName='MRU' city='HYD' />
+      <h1>Hello, Good Afternoon</h1>
+      <h2>SUCCESS</h2> */}
     </div>
+    
   )
 }
 
 export default App
+//!how to apply for your components
+//1.External Stylesheet
+//2.Inline CSS
+//3.Module CSS
