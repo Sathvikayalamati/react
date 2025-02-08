@@ -141,27 +141,62 @@
 // }
 
 // export default App
-import React from 'react'
-//import FunctionalComponent from './components/FunctionalComponent';
-import styles from './myStyle.module.css'
-import './components/Styles.css'
+// import React from 'react'
+// //import FunctionalComponent from './components/FunctionalComponent';
+// import styles from './myStyle.module.css'
+// import './components/Styles.css'
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1 class='heading'>This is on styling class</h1>
+//       <h2 class={styles.error}>Error!! 404</h2>
+     
+//       {/* <FunctionalComponent clgName='MRU' city='HYD' />
+//       <h1>Hello, Good Afternoon</h1>
+//       <h2>SUCCESS</h2> */}
+//     </div>
+    
+//   )
+// }
+
+// export default App
+// //!how to apply for your components
+// //1.External Stylesheet
+// //2.Inline CSS
+// //3.Module CSS
+// import React from 'react'
+// import "./App.css"
+// import styles from './myStyle.module.css'
+// // import { FunctionalComponent } from './components/props/FunctionalComponent'
+// import "./global.css"
+// import ClassComponent from './components/ClassComponent'
+// const App = () => {
+//   return (
+//     <div>
+//     {/*<FunctionalComponent clg="MRU" msg="Good Afternoon" apply={true}/>
+//     <ClassComponent/>*/}
+//     <ClassComponent/>
+
+//     </div>
+//   )
+// }
+
+// export default App
+//import logo from './logo.svg'
+import './App.css';
+import MyForm from './components/MyForm';
+//import './formStyles' 
+
+
 
 function App() {
   return (
-    <div className="App">
-      <h1 class='heading'>This is on styling class</h1>
-      <h2 class={styles.error}>Error!! 404</h2>
+    <div >
+     <MyForm/>
      
-      {/* <FunctionalComponent clgName='MRU' city='HYD' />
-      <h1>Hello, Good Afternoon</h1>
-      <h2>SUCCESS</h2> */}
-    </div>
-    
-  )
+     </div>
+  );
 }
 
-export default App
-//!how to apply for your components
-//1.External Stylesheet
-//2.Inline CSS
-//3.Module CSS
+export default App;
