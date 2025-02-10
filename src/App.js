@@ -185,15 +185,16 @@
 // export default App
 //import logo from './logo.svg'
 import './App.css';
-import MyForm from './components/MyForm';
+import UseEffectEx from './hookexamples/UseEffectEx'
+//import MyForm from './components/MyForm';
 //import './formStyles' 
 
 
 
 function App() {
   return (
-    <div >
-     <MyForm/>
+    <div  >
+     <UseEffectEx/>
      
      </div>
   );
