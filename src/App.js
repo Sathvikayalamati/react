@@ -185,16 +185,15 @@
 // export default App
 //import logo from './logo.svg'
 import './App.css';
-import UseEffectEx from './hookexamples/UseEffectEx'
+//import UseEffectEx from './hookexamples/UseEffectEx'
 //import MyForm from './components/MyForm';
 //import './formStyles' 
-
-
-
+import RefExamples from './hookexamples/RefExamples';
 function App() {
   return (
     <div  >
-     <UseEffectEx/>
+     {/* <UseEffectEx/> */}
+     <RefExamples/>
      
      </div>
   );
